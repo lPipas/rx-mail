@@ -1,0 +1,50 @@
+td{
+  transition: none;
+}
+
+tr td:nth-child(1):hover{
+  background-color: rgb(234, 251, 251);
+}
+
+tr td.divisionesLetras:hover{
+  background-color: rgb(73, 98, 110);
+}
+
+tr td:nth-child(2) {
+  cursor: url("../img/cursor/pointer.png"), auto;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+tr td:nth-child(2):hover {
+  background-color: rgba(234, 251, 251, 0.657);
+}
+
+.divisionesLetras {
+  text-align: center;
+  background-color: rgb(73, 98, 110);
+  color: white;
+}
+
+.emails {
+  display: flex;
+  justify-content: center;
+}
+
+.filaEmails {
+  background-color: rgb(25, 62, 83);
+}
+
+#buscar {
+  font-size: 30px;
+  min-width: 400px;
+  width: max-content;
+  margin: 10px;
+  background-color: rgb(234, 251, 251);
+  color: rgb(22, 63, 61);
+  padding:8px;
+}
+
+.buscar {
+  display: flex;
+  justify-content: center;
+}

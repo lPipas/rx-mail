@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="dist/css/style.css" />
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <link rel="shortcut icon" href="dist/img/logo/rx_icon.jpg" />
+    <title>Consultorio 11 de Abril</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="header">
+        <div class="header-logo">
+          <img src="dist/img/logo/rx_logo.png" />
+          <span class="logo-name"
+            >Consultorio
+            <p>11 de Abril 130</p></span
+          >
+        </div>
+        <div class="header-nav">
+          <a>
+            <img src="dist/img/icons/dark_user&pass.png" />
+          </a>
+          <a href="mails.html" target="_blank">
+            <img src="dist/img/icons/dark_dentist.png" />
+          </a>
+          <a
+            href="https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb"
+            target="_blank"
+          >
+            <img src="dist/img/icons/dark_server.png" />
+          </a>
+        </div>
+      </div>
+      <div class="controls">
+        <div class="controls-build">
+          <img src="dist/img/icons/dark_create.png" id="crearTabla" />
+          <input id="inputCantidad" type="number" value="1" />
+        </div>
+        <div class="controls-sign">
+          <img id="agregarFila" src="dist/img/icons/dark_plus.png" />
+          <img id="borrarFila" src="dist/img/icons/dark_minus.png" />
+          <img
+            src="dist/img/icons/dark_send.png"
+            class="sendButton"
+            id="obtenerEmails"
+          />
+        </div>
+      </div>
+      <textarea readonly class="pantalla" id="pantalla"></textarea>
+      <div class="main">
+        <table>
+          <tbody id="tabla">
+            <tr>
+              <th><img src="dist/img/icons/user_name.png" /></th>
+              <th><img src="dist/img/icons/arroba.png" /></th>
+            </tr>
+            <tr>
+              <td id="nombre0" contenteditable="true"></td>
+              <td id="email0" contenteditable="true"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="modal">
+      <div class="modal-container">
+        <div class="modal-user">
+          <img src="dist/img/icons/email.png">
+          <input type="text" />
+        </div>
+        <div class="modal-pass">
+          <img src="dist/img/icons/lock.png">
+          <input type="password" />
+        </div>
+        <div class="modal-options">
+          <img id="check" src="dist/img/icons/dark_check.png">
+          <img id="cancel" src="dist/img/icons/dark_cancel.png">
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="dist/js/app.js"></script>
+</html>
